@@ -1,0 +1,260 @@
+.header{
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+
+
+
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 200;
+     
+
+}
+.left-section{
+    width: 100px;
+   
+}
+.logo{
+        z-index: 100;
+        width: 60px;
+        margin-left: 20px;
+        margin-top: 6px;
+    
+        
+    }
+.mid-section{
+    margin-left: 40px;
+    margin-right: 40px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    width: 700px;
+        
+    display: flex;
+    align-items: center;
+    flex: 1fr;
+    justify-content: space-between;
+
+    
+    
+}
+.home, .about-us, .menu, .franchise, .store, .contact-us{
+    color: antiquewhite;
+    cursor: pointer;
+    
+}
+
+.home:hover{
+    font-weight:bold;
+    color: #F9B209;
+    text-decoration:overline;
+    background-color: rgb(14, 14, 14);
+    padding: 6px;
+    border-radius: 4px;
+    transition: 0.55s;
+    
+} 
+.about-us:hover{
+    font-weight:bold;
+    color: #F9B209;
+    text-decoration:overline;
+    background-color: rgb(14, 14, 14);
+    padding: 6px;
+    border-radius: 4px;
+    transition: 0.55s;
+} 
+.menu:hover{
+    font-weight:bold;
+    color: #F9B209;
+    text-decoration:overline;
+    background-color: rgb(14, 14, 14);
+    padding: 6px;
+    border-radius: 4px;
+    transition: 0.55s;
+} 
+.franchise:hover{
+    font-weight:bold;
+    color: #F9B209;
+    text-decoration:overline;
+    background-color: rgb(14, 14, 14);
+    padding: 6px;
+    border-radius: 4px;
+    transition: 0.55s;
+} 
+.store:hover{
+    font-weight:bold;
+    color: #F9B209;
+    text-decoration:overline;
+    background-color: rgb(14, 14, 14);
+    padding: 6px;
+    border-radius: 4px;
+    transition: 0.55s;
+} 
+.contact-us:hover{
+    font-weight:bold;
+    color: #F9B209;
+    text-decoration:overline;
+    background-color: rgb(14, 14, 14);
+    padding: 6px;
+    border-radius: 4px;
+    transition: 0.55s;
+}
+
+
+.right-section{
+    margin-right: 20px;
+    width: 300px;
+    height: 40px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex: 1fr;
+    
+    
+}
+.search-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex: 1fr;
+
+    width: 0;
+}
+.search-bar{
+    flex: 1;
+    height: 24px;
+    padding-left: 0px;
+    font-size: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: inset 1px 1px 2px 5px rgba(0 0 0 0.05);
+    
+      
+}
+
+.search-bar::placeholder{
+    font-size: 12px;
+    padding: 4px;
+}
+
+.search-button{
+    height: 28px;
+    width: 28px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: inset 1px 1px 2px 5px rgba(0 0 0 0.05);
+    margin-right:-1px;
+    margin-right: 8px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-button .tooltip{
+    position: absolute;
+    
+    
+    background-color: gray;
+    color: white;
+    
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+    border-radius: 2px;
+    font-size: 10px;
+    
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+
+}
+
+.search-button:hover .tooltip{
+    opacity: 1;
+
+}
+
+.search-icon{
+    height: 20px;
+   
+}
+
+.voice-search-button{
+    height: 26px;
+    width: 26px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-color: rgb(192, 192, 192);
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.voice-search-button .tooltip{
+    position: absolute;
+    
+
+    background-color: gray;
+    color: white;
+    
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+    border-radius: 2px;
+    font-size: 10px;
+    white-space: nowrap;
+    
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+
+}
+
+.voice-search-button:hover .tooltip{
+    opacity: 1;
+}
+
+.voice-search-icon{
+    height: 18px;
+    
+}
+
+.profile-pic{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
